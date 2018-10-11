@@ -1,0 +1,54 @@
+.game {
+  background: #fcfcfc url('http://q.img.blmdz.cn/home/2018101201122950622553.png') no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game_c {
+  width: 680rpx;
+  height: 330rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+.game_c_p {
+  border-radius: 5rpx;
+  width: 330rpx;
+  height: 330rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5rpx 10rpx #ccc;
+}
+.game_c_p_i {
+  width: 330rpx;
+  height: 220rpx;
+  border-top-left-radius: 5rpx;
+  border-top-right-radius: 5rpx;
+
+}
+.game_c_p_d {
+  width: 330rpx;
+  height: 110rpx;
+  background: #fff;
+  border-bottom-left-radius: 5rpx;
+  border-bottom-right-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+}
+.game_c_p_d_n {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.game_c_p_d_p {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 0.8rem;
+  color: #a171eb;
+  text-align: center;
+}

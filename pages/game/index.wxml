@@ -1,0 +1,162 @@
+<view class='game'>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+  <view class='game_c'>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g1.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>消消乐</label>
+        <label class='game_c_p_d_p'>256人</label>
+      </view>
+    </view>
+    <view class='game_c_p'>
+      <image class='game_c_p_i' src='../../images/game/g2.png'></image>
+      <view class='game_c_p_d'>
+        <label class='game_c_p_d_n'>萌宠过河</label>
+        <label class='game_c_p_d_p'>568人</label>
+      </view>
+    </view>
+  </view>
+</view>

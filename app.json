@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/game/index",
+    "pages/me/index"
+  ],
+  "window":{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ლ(′◉❥◉｀ლ)木逸萧",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#a171eb",
+    "list": [
+      {
+        "selectedIconPath": "images/tab/game_active.png",
+        "iconPath": "images/tab/game.png",
+        "pagePath": "pages/game/index",
+        "text": "游戏"
+      },
+      {
+        "selectedIconPath": "images/tab/me_active.png",
+        "iconPath": "images/tab/me.png",
+        "pagePath": "pages/me/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 20000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

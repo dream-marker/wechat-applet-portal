@@ -1,0 +1,8 @@
+.me {
+  width: 750rpx;
+  height: 750rpx;
+  background: #f0e9fd url('http://q.img.blmdz.cn/home/2018101201131575348363.png') no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+}
