@@ -1,3 +1,28 @@
 <view class='me'>
+  <view class='me_t'>
+    <image class='me_t_i' src="{{user.avatar}}"></image>
+    <view class='me_t_c'>
+      <label class='me_t_c_n'>{{user.nick}}</label>
+      <label class='me_t_c_i'>ID: {{user.userId}}</label>
+    </view>
+    <view class='me_t_e'>
+      <image class='me_t_e_i' src='../../images/edit.png' bindtap='infoBindTap'></image>
+    </view>
+  </view>
+  
+  <view class='me_c'>
+  </view>
 
+  <view class='me_l'>
+    <view class='me_l_p'>
+      <view class='me_l_p_l'>
+        <image class='me_l_p_l_i' src='../../images/game/g1.png'></image>
+        <view class='me_l_p_l_f'>邀请有好礼</view>
+      </view>
+      <view class='me_l_p_r'>
+        <view class='me_l_p_r_f'>很好很强大</view>
+        <view class='me_l_p_r_a'></view>
+      </view>
+    </view>
+  </view>
 </view>

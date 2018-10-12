@@ -54,7 +54,7 @@ const ajax = (app, header, url, method, data, success, fail, complete, flag) => 
         if (typeof success == "function") success(res)
         return
       }
-      if (res.data.code == 706 && !flag) {
+      if (res.data.code == 5 && !flag) {
         app.getUserInfo(function (user) {
           ajax(app, header, url, method, data, success, fail, complete, true)
         }, true)

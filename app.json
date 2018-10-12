@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/game/index",
-    "pages/me/index"
+    "pages/me/info/index",
+    "pages/me/index",
+    "pages/game/index"
   ],
   "window":{
     "enablePullDownRefresh": true,

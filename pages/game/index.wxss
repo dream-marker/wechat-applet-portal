@@ -1,6 +1,8 @@
-.game {
+page {
   background: #fcfcfc url('http://q.img.blmdz.cn/home/2018101201122950622553.png') no-repeat;
   background-size: 100%;
+}
+.game {
   display: flex;
   flex-direction: column;
   align-items: center;

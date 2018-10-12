@@ -1,9 +1,9 @@
 const util = require('utils/util.js')
 App({
   onLaunch: function () {
-    this.getUserInfo(user => {
-      console.info(user)
-    }, true)
+    // this.getUserInfo(user => {
+    //   console.info(user)
+    // }, true)
   },
   util: util,
   getUserInfo: function (callback, need) {
