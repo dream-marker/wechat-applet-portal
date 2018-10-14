@@ -12,10 +12,10 @@ Page({
         if (res.data.data == null || res.data.data.length == 0) return
 
         // 测试数据
-        var data = res.data.data[0]
-        for (var k = 0; k < 8; k++) {
-          res.data.data.push(data)
-        }
+        // var data = res.data.data[0]
+        // for (var k = 0; k < 8; k++) {
+        //   res.data.data.push(data)
+        // }
 
         var obj
         res.data.data.forEach((value, index, array) => {
@@ -40,12 +40,32 @@ Page({
     })
   },
   gameBindTap: function (event) {
-  // gameBindTap: (event) => {
+    // gameBindTap: (event) => {
     var that = this
     var id = event.currentTarget.dataset.id
+    if (id === 1) {
+
+    }
     for (var i = 0; i < that.data.appShow.length; i++) {
-      if (that.data.appShow[i].id === id) {
-        console.info(that.data.appShow[i])
+      var apps = that.data.appShow[i]
+      if (apps.id === id) {
+        if (apps.ad) {
+          app.util.toast('此处应该跳转到AD页面', 'none', 2000, false)
+        } else if (apps.arouse) {
+          wx.navigateToMiniProgram({
+            appId: apps.appId,
+            path: apps.arouseUrl === null ? '' : apps.arouseUrl,
+            envVersion: 'trial',
+            success: (res) => {
+              app.util.toast('跳转成功', 'none', 3000, false)
+            },
+            fail: (res) => {
+              app.util.toast(res.errMsg === 'navigateToMiniProgram:fail can only be invoked by user TAP gesture.' ? '微信规定您至少进行一次点击才能跳转' : res.errMsg, 'none', 3000, false)
+            }
+          })
+        } else {
+          app.util.toast('什么页面都没有设置', 'none', 2000, false)
+        }
         break
       }
     }

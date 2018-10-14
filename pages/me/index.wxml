@@ -14,15 +14,18 @@
   </view>
 
   <view class='me_l'>
-    <view class='me_l_p'>
-      <view class='me_l_p_l'>
-        <image class='me_l_p_l_i' src='../../images/game/g1.png'></image>
-        <view class='me_l_p_l_f'>邀请有好礼</view>
+    
+    <button open-type="share">
+      <view class='me_l_p'>
+        <view class='me_l_p_l'>
+          <image class='me_l_p_l_i' src='../../images/game/g1.png'></image>
+          <view class='me_l_p_l_f'>邀请好友</view>
+        </view>
+        <view class='me_l_p_r'>
+          <view class='me_l_p_r_f'>分享</view>
+          <view class='me_l_p_r_a'></view>
+        </view>
       </view>
-      <view class='me_l_p_r'>
-        <view class='me_l_p_r_f'>很好很强大</view>
-        <view class='me_l_p_r_a'></view>
-      </view>
-    </view>
+    </button>
   </view>
 </view>

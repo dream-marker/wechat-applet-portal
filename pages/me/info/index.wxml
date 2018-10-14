@@ -7,36 +7,42 @@
     </view>
   </view>
 
-  <view class='me_l'>
-    <view class='me_l_p'>
-      <view class='me_l_p_l'>
-        <image class='me_l_p_l_i' src='../../../images/game/g1.png'></image>
-        <view class='me_l_p_l_f'>生日</view>
+  <view class='info_l'>
+    <view class='info_l_p'>
+      <view class='info_l_p_l'>
+        <image class='info_l_p_l_i' src='../../../images/info/1.png'></image>
+        <view class='info_l_p_l_f'>性别</view>
       </view>
-      <view class='me_l_p_r'>
-        <view class='me_l_p_r_f'>2018-05-26</view>
-        <view class='me_l_p_r_a'></view>
-      </view>
+      <!-- <picker bindchange="genderBindChange" value="{{genderIndex}}" range="{{genderArray}}"> -->
+        <view class='info_l_p_r'>
+          <view class='info_l_p_r_f'>{{gender}}</view>
+          <!-- <view class='info_l_p_r_a'></view> -->
+        </view>
+      <!-- </picker> -->
     </view>
-    <view class='me_l_p'>
-      <view class='me_l_p_l'>
-        <image class='me_l_p_l_i' src='../../../images/game/g1.png'></image>
-        <view class='me_l_p_l_f'>性别</view>
+    <view class='info_l_p'>
+      <view class='info_l_p_l'>
+        <image class='info_l_p_l_i' src='../../../images/info/2.png'></image>
+        <view class='info_l_p_l_f'>生日</view>
       </view>
-      <view class='me_l_p_r'>
-        <view class='me_l_p_r_f'>男</view>
-        <view class='me_l_p_r_a'></view>
-      </view>
+      <picker bindchange="birthdayBindChange" value="{{birthday}}" mode="date">
+        <view class='info_l_p_r'>
+          <view class='info_l_p_r_f'>{{birthday}}</view>
+          <view class='info_l_p_r_a'></view>
+        </view>
+      </picker>
     </view>
-    <view class='me_l_p'>
-      <view class='me_l_p_l'>
-        <image class='me_l_p_l_i' src='../../../images/game/g1.png'></image>
-        <view class='me_l_p_l_f'>区域</view>
+    <view class='info_l_p'>
+      <view class='info_l_p_l'>
+        <image class='info_l_p_l_i' src='../../../images/info/3.png'></image>
+        <view class='info_l_p_l_f'>区域</view>
       </view>
-      <view class='me_l_p_r'>
-        <view class='me_l_p_r_f'>豫</view>
-        <view class='me_l_p_r_a'></view>
-      </view>
+      <picker bindchange="areaBindChange" value="{{areaIndex}}" range="{{areaArray}}">
+        <view class='info_l_p_r'>
+          <view class='info_l_p_r_f'>{{area}}</view>
+          <view class='info_l_p_r_a'></view>
+        </view>
+      </picker>
     </view>
   </view>
 </view>

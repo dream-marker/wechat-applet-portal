@@ -35,7 +35,7 @@ page {
 
 
 
-.me_l_p {
+.info_l_p {
   width: 700rpx;
   padding: 25rpx;
   background: #fff;
@@ -44,33 +44,34 @@ page {
   flex-direction: row;
   justify-content: space-between;
 }
-.me_l_p_l {
+.info_l_p_l {
   height: 60rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.me_l_p_l_i {
+.info_l_p_l_i {
   height: 60rpx;
   width: 60rpx;
   padding: 0 20rpx 0 0;
 }
-.me_l_p_l_f {
+.info_l_p_l_f {
   font-size: 0.9rem;
 }
-.me_l_p_r {
+.info_l_p_r {
   height: 60rpx;
+  line-height: 60rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 10rpx 0 0;
 }
-.me_l_p_r_f {
+.info_l_p_r_f {
   font-size: 0.8rem;
   color: #555;
   padding: 0 20rpx 0 0;
 }
-.me_l_p_r_a {
+.info_l_p_r_a {
   height: 20rpx;
   width: 20rpx;
   border-top: 3px solid #ccc;

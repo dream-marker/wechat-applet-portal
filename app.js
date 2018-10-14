@@ -62,8 +62,8 @@ App({
     channel: 1,
     header_form: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
     header_json: { "Content-Type": "application/json;charset=UTF-8" },
-    httpDomain: 'http://127.0.0.1:8083',
-    // httpDomain: 'https://blmdz.cn',
+    // httpDomain: 'http://127.0.0.1:8083',
+    httpDomain: 'https://blmdz.cn/port8083',
   },
   constant: {
     all: {
