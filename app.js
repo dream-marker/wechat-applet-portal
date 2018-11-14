@@ -40,7 +40,13 @@ App({
             )
           },
           fail: function (res) {
-            util.toast(that.constant.all.NET_WORK, 'none', 3000, false)
+            console.info(res)
+            if (res.errMsg == 'getUserInfo:fail scope unauthorized'
+              || res.errMsg == 'getUserInfo:fail auth deny'){
+
+            } else {
+              util.toast(that.constant.all.NET_WORK, 'none', 3000, false)
+            }
           },
           complete: function (res) {
             wx.hideNavigationBarLoading()

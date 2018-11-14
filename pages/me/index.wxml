@@ -1,12 +1,15 @@
 <view class='me'>
   <view class='me_t'>
     <image class='me_t_i' src="{{user.avatar}}"></image>
-    <view class='me_t_c'>
+    <view class='me_t_c' wx:if="{{user != null}}">
       <label class='me_t_c_n'>{{user.nick}}</label>
       <label class='me_t_c_i'>ID: {{user.userId}}</label>
     </view>
+    <view class='me_t_c' wx:if="{{user == null}}">
+      <label class='me_t_c_i'><button open-type='getUserInfo' bindgetuserinfo="bindgetuserinfo">登录</button></label>
+    </view>
     <view class='me_t_e'>
-      <image class='me_t_e_i' src='../../images/edit.png' bindtap='infoBindTap'></image>
+      <image wx:if="{{user != null}}" class='me_t_e_i' src='../../images/edit.png' bindtap='infoBindTap'></image>
     </view>
   </view>
   

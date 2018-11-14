@@ -1,6 +1,24 @@
 page {
   background: #efefef;
 }
+button {
+  font-size: 28rpx;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-align: left;
+  color: #fff;
+}
+input {
+  outline: none;
+  border: none;
+  list-style: none;
+}
+button::after {
+  border: none;
+}
 .me {
   width: 750rpx;
   display: flex;
