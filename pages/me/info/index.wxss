@@ -1,5 +1,5 @@
 page {
-  background: #fcfcfc url('http://q.img.blmdz.cn/home/2018101201122950622553.png') no-repeat 0 -100rpx;
+  background: #fcfcfc url('https://a.img.blmdz.cn/wechat-applet-portal/bg1.png') no-repeat 0 -100rpx;
   background-size: 100%;
 }
 /* .info {

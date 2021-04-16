@@ -17,8 +17,25 @@ Page({
       that.setData({ user: user })
     }, true)
   },
-  infoBindTap: () => {
-    wx.navigateTo({ url: '/pages/me/info/index' })
+  infoBindTap: function (e) {
+    var _this = this
+    wx.getUserProfile({
+      desc: '用于更新完善会员资料',
+      success: (res) => {
+        console.info(res)
+        app.util.ajaxForm(app, '/api/auth/info', 'POST',
+        {
+          gender: res.userInfo.gender,
+          avatar: res.userInfo.avatarUrl,
+          nick: res.userInfo.nickName
+        },
+        function (res) {
+          app.globalData.user = res.data.data
+          _this.setData({ user: app.globalData.user })
+          wx.navigateTo({ url: '/pages/me/info/index' })
+        })
+      }
+    })
   },
   bindgetuserinfo: function (info) {
     var that = this

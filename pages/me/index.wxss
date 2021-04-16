@@ -25,7 +25,7 @@ button::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('http://q.img.blmdz.cn/home/2018101201131575348363.png') no-repeat;
+  background: url('https://a.img.blmdz.cn/wechat-applet-portal/bg3.png') no-repeat;
   background-size: 100% 300rpx;
 }
 .me_t {
