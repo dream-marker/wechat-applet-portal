@@ -3,7 +3,20 @@ const app = getApp()
 Page({
   data: {
     apps: [],
-    appShow: []
+    serialSequence: '',
+    appShow: [],
+    showSelect: false,
+    showList: [],
+    searchList: [
+      {title: 'TGBU5826032'},{title: 'TGBU5835246'},{title: 'TGBU5846271'},{title: 'TGBU5856371'},{title: 'TGBU5892176'},
+      {title: 'TGBU5926172'},{title: 'TGBU5927351'},{title: 'TGBU5925167'},{title: 'TGBU5936517'},{title: 'TGBU5942761'},
+      {title: 'TGBU5725611'},{title: 'TGBU5726531'},{title: 'TGBU5712971'},{title: 'TGBU5736152'},{title: 'TGBU5736751'},
+      {title: 'TGBU5627161'},{title: 'TGBU5623718'},{title: 'TGBU5621563'},{title: 'TGBU5638971'},{title: 'TGBU5635615'},
+      {title: 'TGBU5637612'},{title: 'TGBU5645625'},{title: 'TGBU5649827'},{title: 'TGBU5649811'},{title: 'TGBU5653781'},
+      {title: 'TGBU5652871'},{title: 'TGBU5662817'},{title: 'TGBU5662198'},{title: 'TGBU5662193'},{title: 'TGBU5668739'},
+      {title: 'TGBU5527121'},{title: 'TGBU5552178'},{title: 'TGBU5553782'},{title: 'TGBU5537871'},{title: 'TGBU5562713'},
+      {title: 'TGBU5427121'},{title: 'TGBU5467821'},{title: 'TGBU5398171'},{title: 'TGBU5380981'},{title: 'TGBU5384671'},
+    ]
   },
   onLoad: function () {
     var that = this
@@ -38,6 +51,57 @@ Page({
       }
         that.setData({ apps: that.data.apps });
     })
+  },
+  colseModel: function (e) {
+    let _this = this
+    _this.setData({
+      showSelect: false,
+      serialSequence: null
+    })
+  },
+  getInputValue: function (e) {
+    console.log(e.currentTarget.dataset.value)
+    let _this = this
+    _this.setData({
+      showSelect: false,
+      serialSequence: e.currentTarget.dataset.value
+    })
+    console.log(_this.data.serialSequence)
+  },
+  inputedit: function (e) {
+    let _this = this
+    let dataset = e.currentTarget.dataset
+    let value = e.detail.value
+    let name = dataset.name
+    let list = []
+    _this.data.searchList.forEach(res => {
+      let obj = {title: ''}
+      if (res.title.search(value) != -1) {
+        obj.title = res.title
+        list.push(obj)
+      }
+    })
+    if (list.length <= 0) {
+      let obj = {title: '暂无数据'}
+      list.push(obj)
+    }
+    _this.setData({
+      showList: list
+    })
+    if (value) {
+      _this.setData({
+        showSelect: true
+      })
+    } else {
+      _this.setData({
+        showSelect: false
+      })
+    }
+    _this.data[name] = value
+    _this.setData({
+      name: _this.data[name]
+    })
+    console.log(_this.data[name])
   },
   gameBindTap: function (event) {
     // gameBindTap: (event) => {

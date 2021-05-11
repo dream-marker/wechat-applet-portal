@@ -1,4 +1,16 @@
 <view class='game'>
+  <view class="select_content">
+    <view class="select_top">
+      <label>序列号：</label>
+      <input type="text" placeholder="请输入" data-name="serialSequence" bindinput="inputedit" value="{{serialSequence}}"/>
+    </view>
+    <view class="select_bottom" wx:if="{{showSelect}}">
+      <view class="select_bg" bindtap="colseModel"></view>
+      <view class="select_value">
+        <text wx:for="{{showList}}" bindtap="getInputValue" data-value="{{item.title}}">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
   <view class='game_c' wx:for="{{apps}}" wx:key="*this">
     <view class='game_c_p' data-id='{{item.first.id}}' bindtap='gameBindTap'>
       <image class='game_c_p_i' src='{{item.first.showImage}}'></image>

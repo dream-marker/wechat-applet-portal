@@ -54,3 +54,74 @@ page {
   color: #a171eb;
   text-align: center;
 }
+
+
+
+
+
+
+.select_content {
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+.select_top {
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding: 16rpx 0;
+  margin-left: 6%;
+  height: 84rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.select_top label {
+  width: 22%;
+  float: left;
+  line-height: 48rpx;
+  text-align: left;
+  display: inline-block;
+}
+.select_top input {
+  width: 70%;
+  padding-left: 2%;
+  float: left;
+}
+.select_bottom {
+  position: absolute;
+  top: 84rpx;
+  left: 0;
+  width: 100%;
+  max-height: 600rpx;
+  z-index: 999;
+  animation: animate 400ms ease;
+}
+
+@keyframes animate{
+  from {
+    top : 800rpx;
+  }
+  to {
+    top : 84rpx;
+  }
+}
+.select_bg {
+  height: 600px;
+  width: 100%;
+  background: #d3d3d3;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+.select_value {
+  overflow: scroll;
+  padding-left: 28%;
+  max-height: 600rpx;
+  background: #fff;
+  box-shadow: 4px 4px 10px #eee;
+}
+.select_value text{
+  width: 100%;
+  padding: 24rpx 0;
+  float: left;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
