@@ -133,5 +133,14 @@ Page({
         break
       }
     }
+  },
+  wxScanCode:  function () {
+    wx.scanCode({
+      // onlyFromCamera: true,
+      success(res) {
+        console.info(res)
+        app.util.toast(res.result, 'none', 2000, false)
+      }
+    })
   }
 })

@@ -11,6 +11,7 @@
       </view>
     </view>
   </view>
+  <button bindtap="wxScanCode">扫码</button>
   <view class='game_c' wx:for="{{apps}}" wx:key="*this">
     <view class='game_c_p' data-id='{{item.first.id}}' bindtap='gameBindTap'>
       <image class='game_c_p_i' src='{{item.first.showImage}}'></image>
